@@ -1,11 +1,17 @@
 import React from 'react'
+import "./index.css"
+import login from "../../image/Login.jpg"
+import register from "../../image/Register.jpg"
 
-export const Form = (props) => {
+export const Field = (props) => {
     return (
-        <div className={`mb-3 mx-${props.margin} col-md-${props.width}`}>
-             <label  className="form-label bold text-uppercase " aria-describedby={props.describe} >{props.label}</label>
-             <input type={props.type} className="form-control" onChange={props.onChange} id={props.id} placeholder={props.placeholder} />
-             {props.children}
-        </div>
+       <div className="row size">
+           <div className="col-lg-8">
+               <img src={props.img? login : register} className="img" alt="" />
+           </div>
+           <div className="col-lg-4 bg-light d-flex flex-column justify-content-center">
+               {props.children}
+           </div>
+       </div>
     )
 }

@@ -1,0 +1,25 @@
+:root{
+    --roboto:  'Roboto', sans-serif;
+    --noto:  'Noto Sans JP', sans-serif;
+    --blue: #1877F2;   
+    --white: #ffffff;
+    --black: #1C1E21;
+}
+.roboto{
+    font-family: var(--roboto);
+}
+.noto{
+    font-family: var(--noto);
+}
+.btn-blue{
+    border-color: var(--blue);
+    color: var(--white);
+}
+.text-black{
+    color: var(--black);
+}
+.text-sm{
+    font-size: 14px;
+    line-height: 18.8px;
+    color: var(--blue);
+}
