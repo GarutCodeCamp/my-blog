@@ -23,3 +23,13 @@
     line-height: 18.8px;
     color: var(--blue);
 }
+.size-default{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.bg-forgot{
+    background-image: url("../image/lukas-blazek-GnvurwJsKaY-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+}
